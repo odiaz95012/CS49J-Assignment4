@@ -55,7 +55,8 @@ public class Main {
         System.out.println("New updated Map");
         gradebook.printGrades(comparator);
 
-
+        Student s4 = new Student(2, "Candice");
+        System.out.println(gradebook.addStudent(s4));
 
     }
 }
