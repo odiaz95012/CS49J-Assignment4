@@ -22,11 +22,11 @@ public class Main {
         System.out.println(MyCollections.isBalanced("[(3*5)]^2]"));
 
         Gradebook gradebook = new Gradebook();
-        Student s1 = new Student("Bob", 1);
-        Student s2 = new Student("Alice", 2);
+        Student s1 = new Student(1, "Bob");
+        Student s2 = new Student(2,"Alice");
         gradebook.addStudent(s1, 'B');
         gradebook.addStudent(s2,'A');
-        Student s3 = new Student("Jay", 3);
+        Student s3 = new Student(3, "Jay");
         gradebook.addStudent(s3);
         Comparator<Student> comparator = new Comparator<Student>() {
             @Override

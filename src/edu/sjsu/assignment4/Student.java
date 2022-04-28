@@ -6,13 +6,14 @@ public class Student {
     private String name;
     private int id;
 
-    public Student(String name, int id) {
-        this.name = name;
+    public Student(int id, String name) {
         this.id = id;
+        this.name = name;
+
     }
 
     public Student(int id) {
-        this("Unnamed",id);
+        this(id,"Unnamed");
     }
 
     public String getName() {

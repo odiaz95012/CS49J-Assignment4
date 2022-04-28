@@ -43,7 +43,7 @@ public class Gradebook extends HashMap<Student, Character> {
         //Remove the student from the map
         this.remove(getStudent(this,id));
         //Create a new student with the updated name, but same id
-        Student updatedStudent = new Student(newName,id);
+        Student updatedStudent = new Student(id,newName);
         //Reinsert the student with the updated name and same id to the map
         this.put(updatedStudent,currentStudentGrade);
         return true;
